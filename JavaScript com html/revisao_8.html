@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <script>    
+    let lista = [10, 20, 30, 40];
+    let valor = 25;
+    let posicao = 0;
+
+    console.log(lista);
+    lista.push(0); // abre uma posição no final
+    
+    console.log(lista);
+    for (let i = lista.length - 1; i > posicao; i--) {
+        lista[i] = lista[i - 1];
+        console.log("Vetor na " + (lista.length-i)+ " passagem " + lista);
+    }
+    lista[posicao] = valor;
+    console.log(lista);
+
+     </script>
+</head>
+<body>
+    
+</body>
+</html>
